@@ -11,6 +11,7 @@
 
 ### Vagrant Patch ###
 *.box
+*.log
 
 ### VisualStudioCode ###
 .vscode/*
