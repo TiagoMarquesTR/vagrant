@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 1
       vb.name = "ubuntu_dockerhost"
     end
-
+    config.vm.network "private_network", type: "dhcp" ##This is to define dhcp
     dockerhost.vm.provision "shell",
         inline: "apt-get update && apt-get install -y docker.io"
   end
